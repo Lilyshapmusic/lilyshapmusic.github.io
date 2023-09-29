@@ -28,6 +28,40 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
+	.video-container{
+		width:100%;
+		margin:0 auto;
+		padding:20px 0;
+		text-align:center;
+		background:red;
+		height:auto;
+	}
+	
+	.video{
+		width:40%;
+		display:inline-block;
+	}
+	
+	.video div {
+		width:100%;
+		height:0;
+		padding-bottom:56.25%;
+		position:relative;
+		display:inline-block;
+		box-sizing:border-box;
+		
+	}
+	.video iframe {
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+	}
+	 .video-text{
+		 width:50%;
+		 margin:0 auto;
+	 }
 
 body {
 	line-height: 1;
@@ -2872,6 +2906,30 @@ input, select, textarea {
 						}
 
 		}
+
+		ul.actions.fitter {
+			width: 160px;
+		}
+
+			ul.actions.fitter li {
+				-moz-flex-grow: 1;
+				-webkit-flex-grow: 1;
+				-ms-flex-grow: 1;
+				flex-grow: 1;
+				-moz-flex-shrink: 1;
+				-webkit-flex-shrink: 1;
+				-ms-flex-shrink: 1;
+				flex-shrink: 1;
+				width: 100%;
+			}
+
+				ul.actions.fitter li > * {
+					width: 100%;
+				}
+
+			ul.actions.fitterstacked {
+				width: 100%;
+			}
 
 /* Icons */
 
